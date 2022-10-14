@@ -1,0 +1,30 @@
+{
+"home.sobreMi": "Sobre mí",
+"home.proyectos": "Proyectos",
+"home.contacto": "Contacto",
+"home.desarrolladorFrontend":"Desarrollador Frontend",
+"home.presentacion":"Desarrollador Frontend con fuerte orientación al detalle y experiencia previa en Marketing y Publicidad digital. Apasionado por el diseño, la tecnologia y la comunicación, encontré en el Desarrollo Frontend nuevas maneras de crear soluciones y dar forma a mis ideas de forma lógica sin dejar de lado la creatividad.",
+"home.descargarCV":"Descargar CV",
+"home.habilidades":"Habilidades",
+"home.contactame": "contacta",
+"home.descripcion.JAU":"App orientada a resolver problemas cotidianos, de forma sencilla o casera",
+"home.descripcion.BRUM": "Plataforma que permite, buscar flete y precio en base a nuestra necesidad de carga",
+"home.descripcion.REACT-STORE":"E-Commerce, presentado como proyecto final en curso de React JS en Coderhouse",
+"home.sitio":"Ir al sitio",
+"home.nombre":"Nombre y Apellido",
+"home.correo":"Correo electrónico",
+"home.enviar": "Enviar",
+"home.ingresarNombre":"Por favor ingrese un nombre",
+"home.ingresarCorreo":"Por favor ingrese un correo",
+"home.errorNombre":"El nombre solo puede contener letras y espacios",
+"home.errorCorreo": "La dirección de correo es incorrecta",
+"home.saludoContacto": "Gracias por contactarme",
+"home.creadoPor":"Creado por Maximiliano Sarmiento",
+"home.volverAlInicio":"Volver al inicio"
+
+
+
+
+
+
+}

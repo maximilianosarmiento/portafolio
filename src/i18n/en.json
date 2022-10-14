@@ -1,0 +1,27 @@
+{
+    "home.sobreMi": "About",
+    "home.proyectos": "Projects",
+    "home.contacto": "Contact",
+    "home.desarrolladorFrontend":"Frontend Developer",
+    "home.presentacion":"Frontend Developer with strong orientation to detail and previous experience in Marketing and Digital Advertising. Passionate by design, technology and comunication, i found in Frontend Development new ways to create ideas, or build solutions in a logical way without neglecting creativity.",
+    "home.descargarCV":"Download Resume",
+    "home.habilidades": "Skills",
+    "home.descripcion.JAU":"App aimed at solving everyday problems, in a simple or homemade way",
+    "home.descripcion.BRUM": "Platform that allows us to search for freight and price based on our cargo needs",
+    "home.descripcion.REACT-STORE":"E-Commerce, featured as React JS Final Project in React Bootcamp",
+    "home.sitio":"Go to the site",
+    "home.contactame": "contact",
+    "home.nombre":"Name and Surnme",
+    "home.correo":"E-mail",
+    "home.enviar": "Send",
+    "home.ingresarNombre":"Please enter a name",
+    "home.ingresarCorreo":"Please enter an email",
+    "home.errorNombre":"The name can only contain letters and spaces",
+    "home.errorCorreo": "The E-mail adress given is wrong",
+    "home.saludoContacto": "Thnaks for contacting me!",
+    "home.creadoPor":"Created by Maximiliano Sarmiento",
+    "home.volverAlInicio":"Back to top"
+
+
+    
+}

@@ -1,23 +1,52 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar';
+import { useTranslation } from 'react-i18next';
+
+
+/* import '../src/styles/contacto.scss' */
+import Contacto from './components/Contacto';
+import Tecnologias from './components/Teconologias';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+import ProyectosCard from './components/ProyectosCard';
+import ProyectosContainer from './components/ProyectosContainer';
+
+import Formulario from './components/Formulario';
+
+
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
+
+
+
+
+
 
 function App() {
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar></NavBar>
+      <Header></Header>
+      <Main></Main>
+      <Tecnologias></Tecnologias>
+      <ProyectosContainer></ProyectosContainer>
+      <Contacto></Contacto>
+      <Footer></Footer>
+
+      
+      {/* <Main></Main> */}
+      {/* <TituloProyectos></TituloProyectos>
+      <Slider></Slider> */}
+      {/* <ProyectosContainer></ProyectosContainer> */}
+      {/* <Carrousel></Carrousel> */}
+      {/* <Contacto></Contacto> 
+      <Formulario></Formulario> */}
     </div>
   );
 }

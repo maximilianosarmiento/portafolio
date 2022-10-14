@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+/* body{
+  
+  background-image: linear-gradient(rgba(255, 255, 255, 0.817), rgba(5, 115, 149, 0.573))(rgba(29, 65, 77, 0.459),rgba(33, 33, 33, 0.817)), url('../src/img/fondo2.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+} */
+body{
+  background-color: #f1eee9;
+}
+:root{
+  --padding: 10px;
+  --bgcolor: rgba(190, 186, 186, 0.235);
+  --hovercolor: rgba(107, 106, 106, 0.582);
+  --primario: rgb(60, 197, 218);
+  --secundario: rgb(174, 174, 174);
+/*   --width-collapsed: 40px; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+.slick-list {margin: 0 -5px;}
+.slick-slide>div {padding: 0 5px;}
+
+/* .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr), 50px ;
+  grid-template-areas:
+    'main main'
+    'proyectos habilidades'
+    'cont cont'
+    'footer footer';
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
