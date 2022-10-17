@@ -1,15 +1,13 @@
-import Hamburger from 'hamburger-react';
+import Hamburger from "hamburger-react";
 
-function BtnMenu({menuActive, setMenuActive}) {
-    
-
+function BtnMenu({ menuActive, setMenuActive }) {
   return (
     <Hamburger
       toggled={menuActive}
-      toggle={()=>setMenuActive(!menuActive)}
+      toggle={() => setMenuActive(!menuActive)}
       size={20}
-      />
-  )
+    />
+  );
 }
 
 export default BtnMenu;
