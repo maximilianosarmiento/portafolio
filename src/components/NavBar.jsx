@@ -3,6 +3,7 @@ import arg from "../img/arg.png";
 import usa from "../img/usa.png";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import i18n from "../i18n";
 
 const NavBar = () => {
