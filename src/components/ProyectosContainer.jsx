@@ -13,7 +13,7 @@ const ProyectosContainer = () => {
       id="proyectos"
       className=" flex flex-col w-9/12 max-w-4xl mx-auto my-auto pt-12 "
     >
-      <h1 className="text-3xl   mb-4 font-kodchasan font-light text-azul">
+      <h1 className="text-3xl   mb-4 font-kodchasan font-light text-azul dark:text-grisClaro">
         {t("home.proyectos")}
       </h1>
 
@@ -22,7 +22,7 @@ const ProyectosContainer = () => {
           return (
             <div
               key={index}
-              class="w-64 max-h-fit  rounded-lg  bg-grisClaro  flex flex-col  m-5  border-2 border-naranja shadow-md hover:shadow-xl  transition duration-200"
+              class="w-64 max-h-fit  rounded-lg  bg-grisClaro dark:bg-azul  flex flex-col  m-5  border-2 border-naranja shadow-md hover:shadow-xl  transition duration-200"
             >
               <a href={proyecto.url} target="_blank">
                 <img
@@ -33,7 +33,7 @@ const ProyectosContainer = () => {
               </a>
 
               <div class="p-3">
-                <h5 class="mb-1 text-xl font-kodchasan font-semibold tracking-tight text-azul dark:text-white">
+                <h5 class="mb-1 text-xl font-kodchasan font-semibold tracking-tight text-azul dark:text-grisClaro">
                   <a href={proyecto.url} target="_blank">
                     {proyecto.nombre}
                   </a>

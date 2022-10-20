@@ -84,14 +84,14 @@ const Formulario = () => {
                 {console.log(errors)}
 
                 <div className='divNombre'>
-                    <label htmlFor='nombre' className='text-azul font-kodchasan font-light'>{t("home.nombre")}</label>
-                    <input onBlur={handleBlur} className=' shadow-md w-full bg-grisClaro bg-opacity-30  border-2 border-naranja mt-3 p-1 rounded-lg' type='text' name='nombre' id='nombre' placeholder='Tony Stark' value={values.nombre} onChange={handleChange}></input>
+                    <label htmlFor='nombre' className='text-azul dark:text-grisClaro font-kodchasan font-light'>{t("home.nombre")}</label>
+                    <input onBlur={handleBlur} className=' shadow-md w-full bg-grisClaro   border-2 border-naranja mt-3 p-1 rounded-lg' type='text' name='nombre' id='nombre' placeholder='Tony  Stark' value={values.nombre} onChange={handleChange}></input>
 
                     {touched.nombre && errors.nombre && <div className=' text-red-600'>{errors.nombre}</div>}
                 </div>
 
                 <div className='divApellido  border-naranja mt-5'>
-                    <label htmlFor='correo ' className='text-azul font-kodchasan font-light'>{t("home.correo")}</label>
+                    <label htmlFor='correo ' className='text-azul dark:text-grisClaro font-kodchasan font-light'>{t("home.correo")}</label>
                     <input onBlur={handleBlur} className= 'shadow-md w-full border-2 bg-grisClaro  border-naranja  mt-3 p-1 rounded-lg' type='email' name='correo' id='correo' placeholder='tonystark@starkindustries.com' value={values.correo} onChange={handleChange}></input>
 
                     {touched.correo && errors.correo && <div className=' text-red-600'>{errors.correo}</div>}

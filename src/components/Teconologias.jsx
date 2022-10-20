@@ -10,7 +10,7 @@ const Teconologias = () => {
     <div className="flex flex-col  w-9/12 max-w-4xl mx-auto my-4">
 
       
-        <h1 className="text-3xl  my-4 font-kodchasan font-light text-azul">
+        <h1 className="text-3xl  my-4 font-kodchasan font-light text-azul dark:text-grisClaro">
           {t("home.habilidades")}
         </h1>
       

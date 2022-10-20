@@ -15,17 +15,8 @@
     background-attachment: fixed;
 
 } */
-body{
-  background-color: #f1eee9;
-}
-:root{
-  --padding: 10px;
-  --bgcolor: rgba(190, 186, 186, 0.235);
-  --hovercolor: rgba(107, 106, 106, 0.582);
-  --primario: rgb(60, 197, 218);
-  --secundario: rgb(174, 174, 174);
-/*   --width-collapsed: 40px; */
-}
+
+
 
 
 
