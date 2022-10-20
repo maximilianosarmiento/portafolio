@@ -19,7 +19,7 @@ const NavBar = () => {
     <div className="bg-azul h-10 fixed z-10 w-full">
       <div className="container max-w-6xl h-full mx-auto flex place-content-around items-center">
         <h1 className="font-kodchasan font-medium text-naranja text-3xl justify-center">
-          <a href="../index.js">M</a>
+          <a href="../../public/index.html">M</a>
         </h1>
 
         <ul className="flex flex-row gap-3 lg:gap-9 text-center justify-center w-72">
