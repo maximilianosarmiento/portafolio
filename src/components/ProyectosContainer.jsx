@@ -39,7 +39,7 @@ const ProyectosContainer = () => {
                   </a>
                 </h5>
 
-                <p class=" font-normal text-xs text-grisOscuro h-16 ">
+                <p class=" font-normal text-xs text-grisOscuro dark:text-grisClaro dark:opacity-70 h-16 ">
                   {t(`home.descripcion.${proyecto.nombre.toUpperCase()}`)}
                 </p>
               </div>
