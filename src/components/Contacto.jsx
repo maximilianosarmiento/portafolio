@@ -1,9 +1,9 @@
-import React from "react";
-import Formulario from "./Formulario";
-/* import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-} from "@fortawesome/free-solid-svg-icons"; */
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import React from 'react'
+import Formulario from './Formulario'
+import{
+    FaLinkedinIn,
+    FaGithub
+} from 'react-icons/fa'
 import { useTranslation } from "react-i18next";
 
 const Contacto = () => {
@@ -15,7 +15,7 @@ const Contacto = () => {
     >
       <div className="flex flex-col self-center w-1/2">
         <div className="flex place-content-around group">
-          <h1 className="text-4xl mb-4 font-kodchasan font-light text-azul">
+          <h1 className="text-4xl mb-4 font-kodchasan font-light text-azul dark:text-grisClaro">
             {t("home.contactame")}
             <span className="text-4xl mb-4 font-kodchasan font-light text-naranja">
               me!

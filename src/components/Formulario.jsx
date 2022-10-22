@@ -26,9 +26,9 @@ const Formulario = () => {
           correo: "",
           textArea: "",
         }}
-
         validate={(valores) => {
           let errores = {};
+
           if (!valores.nombre) {
             errores.nombre = t("home.ingresarNombre");
             console.log("");
@@ -75,13 +75,13 @@ const Formulario = () => {
             <div className="divNombre">
               <label
                 htmlFor="nombre"
-                className="text-azul font-kodchasan font-light"
+                className="text-azul dark:text-grisClaro font-kodchasan font-light"
               >
                 {t("home.nombre")}
               </label>
               <input
                 onBlur={handleBlur}
-                className="shadow-md w-full bg-grisClaro bg-opacity-30 border-2 border-naranja mt-3 p-1 rounded-lg"
+                className="shadow-md w-full bg-grisClaro border-2 border-naranja mt-3 p-1 rounded-lg"
                 type="text"
                 name="nombre"
                 id="nombre"
@@ -91,14 +91,14 @@ const Formulario = () => {
               ></input>
 
               {touched.nombre && errors.nombre && (
-                <div className="text-red-600">{errors.nombre}</div>
+                <div className=" text-red-600">{errors.nombre}</div>
               )}
             </div>
 
             <div className="divApellido border-naranja mt-5">
               <label
                 htmlFor="correo"
-                className="text-azul font-kodchasan font-light"
+                className="text-azul dark:text-grisClaro font-kodchasan font-light"
               >
                 {t("home.correo")}
               </label>

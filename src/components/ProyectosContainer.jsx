@@ -11,7 +11,7 @@ const ProyectosContainer = () => {
       id="proyectos"
       className="flex flex-col w-9/12 max-w-4xl mx-auto my-auto pt-12"
     >
-      <h1 className="text-3xl mb-4 font-kodchasan font-light text-azul">
+      <h1 className="text-3xl mb-4 font-kodchasan font-light text-azul dark:text-grisClaro">
         {t("home.proyectos")}
       </h1>
 
@@ -20,7 +20,7 @@ const ProyectosContainer = () => {
           return (
             <div
               key={index}
-              class="w-64 max-h-fit rounded-lg bg-grisClaro flex flex-col m-5 border-2 border-naranja shadow-md hover:shadow-xl transition duration-200"
+              class="w-64 max-h-fit rounded-lg bg-grisClaro dark:bg-azul  flex flex-col m-5 border-2 border-naranja shadow-md hover:shadow-xl transition duration-200"
             >
               <a href={proyecto.url} rel='noreferrer' target="_blank">
                 <img
@@ -31,19 +31,19 @@ const ProyectosContainer = () => {
               </a>
 
               <div class="p-3">
-                <h5 class="mb-1 text-xl font-kodchasan font-semibold tracking-tight text-azul dark:text-white">
+                <h5 class="mb-1 text-xl font-kodchasan font-semibold tracking-tight text-azul dark:text-grisClaro">
                   <a href={proyecto.url} rel='noreferrer' target="_blank">
                     {proyecto.nombre}
                   </a>
                 </h5>
 
-                <p class="font-normal text-xs text-grisOscuro h-16">
+                <p class="font-normal text-xs text-grisOscuro dark:text-grisClaro dark:opacity-70 h-16">
                   {t(`home.descripcion.${proyecto.nombre.toUpperCase()}`)}
                 </p>
               </div>
 
               <div className="flex items-center">
-                <button className="btnGeneral transition duration-200 text-naranja font-kodchasan font-light m-2  hover:text-grisClaro border-naranja hover:bg-gradient-to-r from-naranja to-orange-600  border-2  w-fit rounded-xl px-2 py-1">
+                <button className="btnGeneral transition duration-200 text-naranja font-kodchasan font-light m-2 hover:text-grisClaro border-naranja hover:bg-gradient-to-r from-naranja to-orange-600 border-2  w-fit rounded-xl px-2 py-1">
                   <a
                     href={proyecto.url}
                     target="_blank"

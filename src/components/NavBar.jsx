@@ -2,11 +2,19 @@ import React from "react";
 import arg from "../img/arg.png";
 import usa from "../img/usa.png";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { darkModeContext } from "../Context/darkModeContext.jsx";
 import { FaMoon, FaSun } from "react-icons/fa";
 import i18n from "../i18n";
 
 const NavBar = () => {
+  const contexto = useContext(darkModeContext);
+  console.log(contexto);
+
+  const darkMode = () => {
+    contexto.toggleDarkMode();
+  };
+
   const { t } = useTranslation();
 
   const [idioma, setIdioma] = useState("en");
@@ -50,7 +58,14 @@ const NavBar = () => {
         </ul>
 
         <div className="flex gap-3 items-center">
-          
+          <button onClick={darkMode}>
+            {contexto.isDark ? (
+              <FaSun className="text-xl text-naranja hover:text-grisClaro transition duration-150 cursor-pointer"></FaSun>
+            ) : (
+              <FaMoon className="text-xl text-naranja hover:text-grisClaro transition duration-150 cursor-pointer"></FaMoon>
+            )}
+          </button>
+
           <button onClick={cambiarIdioma}>
             {idioma === "es" ? (
               <img
@@ -73,5 +88,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-
