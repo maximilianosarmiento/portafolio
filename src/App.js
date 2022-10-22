@@ -1,9 +1,9 @@
 import "./App.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import NavBar from "./components/NavBar";
 import Contacto from "./components/Contacto";
 import Tecnologias from "./components/Teconologias";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import ProyectosContainer from "./components/ProyectosContainer";
 import Header from "./components/Header";
 import Main from "./components/Main";

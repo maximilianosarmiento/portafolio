@@ -5,36 +5,9 @@
 }
 
 
-
-/* body{
-  
-  background-image: linear-gradient(rgba(255, 255, 255, 0.817), rgba(5, 115, 149, 0.573))(rgba(29, 65, 77, 0.459),rgba(33, 33, 33, 0.817)), url('../src/img/fondo2.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-} */
-
-
-
-
-
-
-
 .slick-list {margin: 0 -5px;}
 .slick-slide>div {padding: 0 5px;}
 
-/* .container{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr), 50px ;
-  grid-template-areas:
-    'main main'
-    'proyectos habilidades'
-    'cont cont'
-    'footer footer';
-} */
 
 
 
