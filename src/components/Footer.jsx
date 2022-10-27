@@ -42,7 +42,7 @@ const Footer = () => {
           className="flex flex-col md:flex-row items-center hover:text-grisClaro transition duration-150 group"
         >
           {t("home.volverAlInicio")}
-          <FaChevronCircleUp className="hidden md:block ml-2 group-hover:transform group-hover:-translate-y-2 group-hover:scale-110 transition duration-150"></FaChevronCircleUp>
+          <FaChevronCircleUp className="hidden md:block group-hover:animate-none animate-bounce ml-2 group-hover:transform group-hover:-translate-y-2 group-hover:scale-110 transition duration-150"></FaChevronCircleUp>
         </a>
       </div>
     </div>

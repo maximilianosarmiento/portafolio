@@ -2,12 +2,40 @@ import React from "react";
 import proyectos from "./Proyectos";
 import { FaGithub, FaPlay } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { useAnimation, motion } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 const ProyectosContainer = () => {
   const { t } = useTranslation();
 
+  const animacion= useAnimation();
+  const {ref, inView} = useInView({
+    threshold: 0.5
+  });
+  
+  useEffect(()=>{
+    console.log("inView perfecto", inView)
+
+    if (inView){
+        animacion.start({
+          x:0,
+          transition:{
+            type: "spring" , duration: 5, bounce:0.3
+          }
+        })
+        if (!inView){
+          animacion.start({
+            x: '-100vw',
+        })
+        }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[inView]);
+
   return (
     <div
+      ref={ref}
       id="proyectos"
       className="flex flex-col w-9/12 max-w-4xl mx-auto my-auto pt-12"
     >
@@ -15,10 +43,13 @@ const ProyectosContainer = () => {
         {t("home.proyectos")}
       </h1>
 
-      <div className="flex w-full flex-wrap justify-around self-center">
+      <motion.div
+        animate={animacion}
+        className="flex w-full flex-wrap justify-around self-center">
         {proyectos.map((proyecto, index) => {
           return (
             <div
+              
               key={index}
               class="w-64 max-h-fit rounded-lg bg-grisClaro dark:bg-azul  flex flex-col m-5 border-2 border-naranja shadow-md hover:shadow-xl transition duration-200"
             >
@@ -68,7 +99,7 @@ const ProyectosContainer = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };

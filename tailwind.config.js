@@ -25,6 +25,17 @@ module.exports = {
           'none': 'none',
           'blur': 'blur(0px)',
         },
+
+        keyframes: {
+          escalar: {
+            "0% , 100%" : {transform: "scale(1)"},
+            "50%" : {transform: "scale(0.97)"}
+          }
+        },
+
+        animation:{
+          animacionEscalar:"escalar 2.5s ease-in infinite"
+        },
         
 
       plugins: [
@@ -33,7 +44,6 @@ module.exports = {
       ],
     }
   },
-  darkMode:'class',
 
 }
 
