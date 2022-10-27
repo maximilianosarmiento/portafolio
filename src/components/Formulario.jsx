@@ -68,7 +68,7 @@ const Formulario = () => {
         }) => (
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col w-10/12 p-2 lg:pr-4 self-center"
+            className="flex flex-col p-2 lg:pr-4 self-center"
           >
             {console.log(errors)}
 
