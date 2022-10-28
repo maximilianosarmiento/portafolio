@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="bg-azul text-naranja h-16 mt-5 w-full items-center">
       <div className="flex max-w-6xl mx-auto justify-around items-center h-full">
-        <div className="justify-center w-fit text-blue-400 self-center flex flex-col md:flex-row">
+        <div className="justify-center w-fit text-blue-400 self-center flex gap-1">
           <button>
             <a
               href="https://www.linkedin.com/in/maximiliano-sarmiento-frontend/"
@@ -39,10 +39,9 @@ const Footer = () => {
         </div>
         <a
           href="#about"
-          className="flex flex-col md:flex-row items-center hover:text-grisClaro transition duration-150 group"
+          className="flex items-center hover:text-grisClaro transition duration-150 group"
         >
-          {t("home.volverAlInicio")}
-          <FaChevronCircleUp className="hidden md:block group-hover:animate-none animate-bounce ml-2 group-hover:transform group-hover:-translate-y-2 group-hover:scale-110 transition duration-150"></FaChevronCircleUp>
+          <FaChevronCircleUp className=" text-2xl  ml-2 group-hover:transform group-hover:-translate-y-2 group-hover:scale-110 transition duration-150"></FaChevronCircleUp>
         </a>
       </div>
     </div>

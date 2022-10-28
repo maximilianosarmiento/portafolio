@@ -11,7 +11,7 @@ const ProyectosContainer = () => {
 
   const animacion = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.35,
+    threshold: 0.2,
   });
 
   useEffect(() => {

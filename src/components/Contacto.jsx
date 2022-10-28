@@ -10,7 +10,7 @@ const Contacto = () => {
   const animacion = useAnimation();
   const animacionForm = useAnimation();
   const { ref, inView } = useInView({
-    threshold: 0.35,
+    threshold: 0.2,
   });
 
   useEffect(() => {
@@ -25,10 +25,8 @@ const Contacto = () => {
         },
       });
       animacionForm.start({
-        x: 0,
         opacity: 1,
         transition: {
-          type: "spring",
           duration: 1.5,
           bounce: 0.2,
         },
@@ -40,7 +38,6 @@ const Contacto = () => {
         opacity: 0,
       });
       animacionForm.start({
-        x: "15vw",
         opacity: 0,
       });
     }
@@ -89,7 +86,7 @@ const Contacto = () => {
           </button>
         </div>
       </motion.div>
-      <motion.div animate={animacionForm} className="w-full">
+      <motion.div animate={animacionForm} className="w-full overflow-hidden">
         <Formulario></Formulario>
       </motion.div>
     </div>
