@@ -4,7 +4,7 @@ export const darkModeContext = createContext();
 const { Provider } = darkModeContext;
 
 const DarkModePovider = ({ children }) => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   const container = document.getElementById("root");
 
@@ -13,7 +13,19 @@ const DarkModePovider = ({ children }) => {
     isDark === false
       ? container.classList.add("dark")
       : container.classList.remove("dark");
+
+      if (container.classList.contains('dark')){
+        localStorage.setItem('darkMode', 'true')
+      } else {
+        localStorage.setItem('darkMode', 'false')
+      }
   };
+    if(localStorage.getItem('darkMode') === "true"){
+      container.classList.add("dark")
+    } else {
+      container.classList.remove("dark")
+    }
+
 
   const funcionesContexto = {
     toggleDarkMode,
