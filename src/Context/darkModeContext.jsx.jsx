@@ -14,22 +14,17 @@ const DarkModePovider = ({ children }) => {
       ? container.classList.add("dark")
       : container.classList.remove("dark");
 
-      if (container.classList.contains('dark')){
-        localStorage.setItem('darkMode', 'true')
+      if(isDark){
+        container.classList.add("dark")
       } else {
-        localStorage.setItem('darkMode', 'false')
+        container.classList.remove("dark")
       }
   };
-    if(localStorage.getItem('darkMode') === "true"){
-      container.classList.add("dark")
-    } else {
-      container.classList.remove("dark")
-    }
 
 
   const funcionesContexto = {
     toggleDarkMode,
-    isDark,
+    isDark
   };
 
   return <Provider value={funcionesContexto}>{children}</Provider>;

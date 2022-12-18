@@ -1,5 +1,5 @@
 import React from "react";
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import pefil from "../img/perfil.jpg";
 import CV from "../Maximiliano Sarmiento CV IT (English).pdf";
 import { useTranslation } from "react-i18next";
@@ -32,12 +32,34 @@ const Main = () => {
           <p className="text-grisOscuro dark:text-grisClaro font-extralight w-11/12 mt-7 text-xs md:text-base">
             {t("home.presentacion")}
           </p>
-          <button className="text-naranja font-kodchasan font-medium mt-4 hover:text-grisClaro border-naranja hover:border-1 hover:bg-gradient-to-r from-naranja to-orange-600 border-2 w-fit rounded-xl px-2 py-1 transition ease-in duration-200">
+          <div className="inline-flex w-full text-blue-400 self-center mt-5 gap-1">
+          <button className="text-naranja font-kodchasan font-medium hover:text-grisClaro border-naranja hover:border-1 hover:bg-gradient-to-r from-naranja to-orange-600 border-2 w-fit rounded-xl px-2 py-1 transition ease-in duration-200 mr-1">
             <a href={CV} download={CV} className="flex items-center gap-1">
               {t("home.descargarCV")}
               <FaDownload />
             </a>
           </button>
+          <button>
+            <a
+              href="https://www.linkedin.com/in/maximiliano-sarmiento-frontend/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center"
+            >
+              <FaLinkedinIn className="text-naranja text-2xl m-2 hover:text-orange-600 hover:scale-105 transition duration-150 items-center hover:drop-shadow-xl"></FaLinkedinIn>
+            </a>
+          </button>
+          <button>
+            <a
+              href="https://github.com/maximilianosarmiento"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center"
+            >
+              <FaGithub className="text-naranja text-2xl m-2 hover:text-orange-600 hover:scale-105 transition duration-150 items-center hover:drop-shadow-xl"></FaGithub>
+            </a>
+          </button>
+        </div>
         </div>
         <div className="pt-7 col-span-2">
           <img

@@ -53,24 +53,24 @@ const ProyectosContainer = () => {
           return (
             <div
               key={index}
-              class="w-64 max-h-fit rounded-lg bg-grisClaro dark:bg-azul  flex flex-col m-5 border-2 border-naranja shadow-md hover:shadow-xl transition duration-200"
+              className="w-64 max-h-fit rounded-lg bg-grisClaro dark:bg-azul  flex flex-col m-5 border-2 border-naranja shadow-md hover:shadow-xl transition duration-200"
             >
               <a href={proyecto.url} rel="noreferrer" target="_blank">
                 <img
-                  class="rounded-t-lg"
+                  className="rounded-t-lg"
                   src={proyecto.imagen}
                   alt="sitio web"
                 />
               </a>
 
-              <div class="p-3">
-                <h5 class="mb-1 text-xl font-kodchasan font-semibold tracking-tight text-azul dark:text-grisClaro">
+              <div className="p-3">
+                <h5 className="mb-1 text-xl font-kodchasan font-semibold tracking-tight text-azul dark:text-grisClaro">
                   <a href={proyecto.url} rel="noreferrer" target="_blank">
                     {proyecto.nombre}
                   </a>
                 </h5>
 
-                <p class="font-normal text-xs text-grisOscuro dark:text-grisClaro dark:opacity-70 h-16">
+                <p className="font-normal text-xs text-grisOscuro dark:text-grisClaro dark:opacity-70 h-16">
                   {t(`home.descripcion.${proyecto.nombre.toUpperCase()}`)}
                 </p>
               </div>

@@ -59,11 +59,11 @@ const NavBar = () => {
 
         <div className="flex gap-3 items-center">
           <button onClick={darkMode}>
-            {contexto.isDark ? (
-              <FaSun className="text-xl text-naranja hover:text-grisClaro transition duration-150 cursor-pointer"></FaSun>
-            ) : (
+            {contexto.isDark === false  ? 
               <FaMoon className="text-xl text-naranja hover:text-grisClaro transition duration-150 cursor-pointer"></FaMoon>
-            )}
+             :
+              <FaSun className="text-xl text-naranja hover:text-grisClaro transition duration-150 cursor-pointer"></FaSun>
+            }
           </button>
 
           <button onClick={cambiarIdioma}>

@@ -59,9 +59,9 @@ const Cards = () => {
     },
   ];
 
-  return imagenes.map((imagen) => {
+  return imagenes.map((imagen, index) => {
     return (
-      <>
+      <div key={index}>
         <Tilt
           key={imagen.index}
           tiltMaxAngleX="30"
@@ -76,7 +76,7 @@ const Cards = () => {
             alt={imagen.nombre}
           ></img>
         </Tilt>
-      </>
+      </div>
     );
   });
 };
