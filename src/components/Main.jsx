@@ -32,9 +32,9 @@ const Main = () => {
           <p className="text-grisOscuro dark:text-grisClaro font-extralight w-11/12 mt-7 text-xs md:text-base">
             {t("home.presentacion")}
           </p>
-          <div className="inline-flex w-full text-blue-400 self-center mt-5 gap-1">
-          <button className="text-naranja font-kodchasan font-medium hover:text-grisClaro border-naranja hover:border-1 hover:bg-gradient-to-r from-naranja to-orange-600 border-2 w-fit rounded-xl px-2 py-1 transition ease-in duration-200 mr-1">
-            <a href={CV} download={CV} className="flex items-center gap-1">
+          <div className="inline-flex w-full text-blue-400 mt-5 gap-1">
+          <button className="text-naranja font-kodchasan font-medium hover:text-grisClaro border-naranja hover:border-1 hover:bg-gradient-to-r from-naranja to-orange-600 border-2 w-fit rounded-xl px-1 sm:px-2 py-1 transition ease-in duration-200 mr-1">
+            <a href={CV} download={CV} className="flex items-center gap-1 text-xs sm:text-base">
               {t("home.descargarCV")}
               <FaDownload />
             </a>
